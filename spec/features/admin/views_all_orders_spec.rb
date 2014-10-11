@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.feature 'User views all orders' do
-  scenario 'at /orders' do
+RSpec.feature 'Admin views all orders' do
+  scenario 'at /admin/orders' do
     10.times { create(:order) }
-    visit orders_path
+    visit admin_orders_path
     expect(page).to have_content("10 Orders")
   end
 end
