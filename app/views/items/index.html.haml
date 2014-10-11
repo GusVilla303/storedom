@@ -4,7 +4,8 @@
       %h1 #{@items.count} Items
   .row
   - @items.each do |item|
-    .col-sm-3
+    .col-sm-3.item
       %h5= item.name
       = image_tag item.image_url
       %p= item.description
+      = button_to "Activate", action: "activate", id: item.id

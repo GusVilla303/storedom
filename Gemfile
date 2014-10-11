@@ -12,11 +12,21 @@ gem 'faker'
 gem 'haml-rails'
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
+gem 'pry'
+gem 'launchy'
+
+
 
 group :development do
   gem 'spring'
+  gem 'quiet_assets'
 end
 
 group :development, :test do
   gem 'capybara'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'factory_girl_rails'
 end
